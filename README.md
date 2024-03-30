@@ -36,3 +36,23 @@ Code Breakdown:
         Evaluates the trained model on the same training data (not ideal for real-world scenarios) using model.evaluate(). This gives test loss and accuracy values.
 
 
+Output:
+  Epoch 1/5:
+    Train Loss: 2.32, Train Accuracy: 3.12%
+  Epoch 2/5:
+    Train Loss: 2.31, Train Accuracy: 9.90%
+  Epoch 3/5:
+    Train Loss: 2.30, Train Accuracy: 11.83%
+  Epoch 4/5:
+    Train Loss: 2.29, Train Accuracy: 12.71%
+  Epoch 5/5:
+    Train Loss: 2.29, Train Accuracy: 13.12%
+  Test Loss: 2.22, Test Accuracy: 21.60%
+
+Observations:
+- Training Progress: The model's training progresses over five epochs. However, there is no indication of improvement in either loss or accuracy from epoch to epoch.
+- Low Accuracy: Throughout training, the accuracy remains quite low, starting from around 3% and reaching only about 13% by the end of the training phase. This suggests that the model is not learning effectively from the training data.
+- Fluctuating Loss and Accuracy: Within each epoch, there are fluctuations in both loss and accuracy across different batches. This could indicate instability in training or inconsistency in the data.
+- Test Performance: The model's performance on the test set is also quite low, with a test accuracy of around 21.6%. This suggests that the model is not able to generalize well to unseen data.
+
+These observations indicate that the model may require further optimization or adjustments to improve its performance. This could involve tuning hyperparameters, adjusting the model architecture, or investigating the quality of the training data.
